@@ -1,8 +1,8 @@
 # MyBank
 
-## first android application
-## bank database using room (jetpack componant)
-## also provided authentication using PIN
+_ first android application(Internship project at The sparks foundation)
+_bank database using room (jetpack componant)
+_ also provided authentication using PIN
 
 
 
