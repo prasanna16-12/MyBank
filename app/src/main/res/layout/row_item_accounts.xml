@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_item_card"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="12dp"
+    android:background="@drawable/tranparent_green_bg"
+    android:transitionName="BackgroundTransition">
+
+    <ImageView
+        android:id="@+id/cust_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/circular_drawable_background"
+        android:transitionName="profileTransition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cust_Name"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:nestedScrollingEnabled="true"
+        android:singleLine="true"
+        android:text="Ashly sane"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:transitionName="nameTransition"
+        app:layout_constraintEnd_toStartOf="@+id/view_details"
+        app:layout_constraintStart_toEndOf="@+id/cust_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cust_Email"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:nestedScrollingEnabled="true"
+        android:singleLine="true"
+        android:text="Ashly@gmail.com"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:transitionName="emailTransition"
+        app:layout_constraintStart_toStartOf="@+id/cust_Name"
+        app:layout_constraintTop_toBottomOf="@+id/cust_Name" />
+
+    <Button
+        android:id="@+id/view_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_open_icon"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="A"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cust_profile"
+        app:layout_constraintEnd_toEndOf="@+id/cust_profile"
+        app:layout_constraintStart_toStartOf="@+id/cust_profile"
+        app:layout_constraintTop_toTopOf="@+id/cust_profile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

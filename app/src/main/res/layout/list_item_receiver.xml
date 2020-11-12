@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/transparent_orange_bg"
+    android:backgroundTint="#999C544F"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/receiver_name"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_account_circle"
+        android:drawablePadding="16dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Prasanna kale"
+        android:textAlignment="viewStart"
+        android:textColor="#C14035"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/receiver_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_acc_no"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/appOrange"
+        android:text="xxxxxxxxxxxxx123"
+        android:textAlignment="viewStart"
+        android:textColor="#C14035"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/receiver_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/receiver_name"
+        app:layout_constraintTop_toBottomOf="@+id/receiver_name" />
+
+    <TextView
+        android:id="@+id/receiver_ifsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ifsc_icon"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/appOrange"
+        android:text="123456789258AcFk"
+        android:textAlignment="viewStart"
+        android:textColor="#C14035"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/receiver_acc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/receiver_acc"
+        app:layout_constraintTop_toBottomOf="@+id/receiver_acc" />
+
+    <ImageView
+        android:id="@+id/add_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/add_icon"
+        android:backgroundTint="@color/appOrange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
